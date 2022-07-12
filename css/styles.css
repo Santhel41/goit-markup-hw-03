@@ -5,11 +5,13 @@
   --gray: #757575;
   --bg: #2f303a;
   --ft: #ffffff99;
+  --botones: #F5F4FA;
 }
 
 /* Ancho de la página */
 html,
 body,
+header,
 footer {
   width: 1600px;
 }
@@ -36,7 +38,13 @@ body {
 }
 
 /* Cabecera de pagina */
-.header {
+
+header {
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+}
+
+.header-container {
   padding-top: 15px;
   margin-left: 215px;
   margin-right: 215;
@@ -46,6 +54,8 @@ body {
   height: 80px;
   width: 1200px;
 }
+
+
 .nav-container:nth-child(2) {
   padding-left: 30px;
 }
@@ -268,18 +278,69 @@ body {
 .navigation-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 106px 485px 50px;
+    width: 100%;
 
 }
-
 
 .nav-boton {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
-    
+    line-height: 6px;
+    letter-spacing: 0.03em;
+
+    background-color: var(--botones);
+    border: var(--botones);
+    border-radius: 4px;
+
+    padding: 0px 24px;
+    margin-left: 6px;
 }
 
+.nav-boton:hover {
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+}
 
+.cards-container {
+    padding: 0px 215px 86px;
+    width: 1600px;
+    display: flex;
+}
 
+.portafolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.tarjeta-portafolio{
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EEEEEE;
+    text-align: left;
+}
+
+.tarjeta-portafolio:hover {
+    cursor: pointer;
+}
+
+.tarjeta-portafolio > h4 {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    padding: 0px 24px;
+}
+
+.tarjeta-portafolio > p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    padding: 0px 24px;
+}
