@@ -343,4 +343,5 @@ header {
     font-size: 16px;
     letter-spacing: 0.03em;
     padding: 0px 24px;
+    color: var(--gray);
 }
